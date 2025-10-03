@@ -30,3 +30,25 @@ if [ -e "$filename" ]; then
 else
     echo "The file '$filename' does not exist."
 fi
+
+#---------------[Example-4]---------------------------#
+echo "Enter your age:"
+read -r age 
+if [ "$age" -lt 18 ]; then
+    echo "You are a minor."
+elif [ "$age" -ge 18 ] && [ "$age" -lt 65 ]; then
+    echo "You are an adult."
+else
+    echo "You are a senior citizen."
+fi
+
+#---------------[Example-5]---------------------------#
+echo "Enter a character:"
+read -r char
+if [[ "$char" =~ [a-zA-Z] ]]; then
+    echo "'$char' is an alphabet."
+elif [[ "$char" =~ [0-9] ]]; then
+    echo "'$char' is a digit."      
+else
+    echo "'$char' is a special character."
+fi
