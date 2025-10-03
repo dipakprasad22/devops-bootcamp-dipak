@@ -96,33 +96,6 @@ Run regularly via cron (daily at 2am) and keep last 7 reports:
 - **Permissions**: non-root users will not see hardware/firmware details. Use `sudo` if needed.
 - **Non-Linux systems**: script targets Linux; some utilities differ on BSD/macOS.
 
----
-
-## Extending the script
-- Add new `section_foo()` functions and map them in `run_section()` to expose them via `--sections`.
-- Add `--quiet` mode, `--upload`, or HTML export for visual reports.
-- Consider unit tests and `shellcheck` linting for quality.
-
----
-
-## Security considerations
-- The script only reads system state and does not modify configuration.
-- Output can include sensitive information (installed packages, open ports, logs). Redact before sharing publicly.
-- When automating report uploads, use secure transport and limit recipients.
-
----
-
-## Contributing
-- Bug reports, feature requests and pull requests are welcome.
-- Keep functions modular and add tests where possible.
-- Use `shellcheck` and small integration tests to validate changes.
-
----
-
-## License
-MIT License — see LICENSE file or include the license header in your repository.
-
----
-
 ## Author
-Generated with assistance from ChatGPT (2025). Modify the content, year, and attribution as appropriate.
+
+Dipak Prasad
