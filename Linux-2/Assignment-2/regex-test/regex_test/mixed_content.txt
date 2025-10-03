@@ -1,0 +1,7 @@
+IPv4 addresses: 192.168.1.1, 10.0.0.1, 172.16.0.100
+Invalid IPs: 999.999.999.999, 192.168.1.256
+Credit cards: 4532-1234-5678-9012, 5555-4444-3333-2222
+SSNs: 123-45-6789, 987-65-4321
+Words: cat, cats, dog, dogs, bird, birds
+Test: file, files, test, testing, tests
+Versions: v1.0, v2.15, v10.2.3, version-1.0

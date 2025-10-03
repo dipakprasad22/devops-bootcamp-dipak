@@ -1,0 +1,9 @@
+2024-01-15 10:30:15 INFO Server started successfully
+2024-01-15 10:30:16 DEBUG Loading configuration files
+2024-01-15 10:30:17 ERROR Failed to connect to database
+2024-01-15 10:30:18 WARN Connection timeout after 30 seconds
+2024-01-15 10:30:19 INFO Retrying connection attempt 1
+2024-01-15 10:30:20 INFO Connection established
+2024-01-15 10:30:21 DEBUG Processing user request
+2024-01-15 10:30:22 ERROR Invalid user credentials
+2024-01-15 10:30:23 INFO User authentication successful

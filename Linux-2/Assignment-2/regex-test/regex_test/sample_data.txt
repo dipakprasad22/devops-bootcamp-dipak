@@ -1,0 +1,10 @@
+John Doe - Phone: 123-456-7890 - Email: john@email.com
+Jane Smith - Phone: 987-654-3210 - Email: jane.smith@company.org
+Bob Johnson - Phone: 555-123-4567 - Email: bob123@test.net
+Alice Brown - Phone: 444-555-6666 - Email: alice@domain.co.uk
+Mike Davis - Phone: 777-888-9999 - Email: mike_davis@example.com
+Color: red, blue, green, colour
+File: test.txt, data.csv, script.py, README.md
+Numbers: 42, 100, 3.14, -25, 0.001
+Dates: 2023-12-25, 01/15/2024, March 3rd, 2024
+URLs: https://example.com, http://test.org, ftp://files.net
