@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # sysinfo.sh - Comprehensive system information script
 # Usage: ./sysinfo.sh [--json|-j] [--output FILE|-o FILE] [--sections sec1,sec2,...] [--all] [--help]
-# AUTHOR: ChatGPT
+# AUTHOR: Dipak Prasad
 
-set -u
-TMPDIR="$(mktemp -d /tmp/sysinfo.XXXXXX)"
-JSON=0
-OUTFILE=""
-SECTIONS=""
-ALL=0
-SCRIPT_NAME="$(basename "$0")"
-
+set -u                                      # Treat unset variables as an error
+TMPDIR="$(mktemp -d /tmp/sysinfo.XXXXXX)"   # temp dir for intermediate files
+JSON=0                                      # output JSON if 1, else plain text
+OUTFILE=""                                  # output file, else stdout
+SECTIONS=""                                 # comma-separated list of sections to run
+ALL=0                                       # if 1, run all sections
+SCRIPT_NAME="$(basename "$0")"              # script name for help
+# Cleanup temp dir on exit
 cleanup() {
     rm -rf "$TMPDIR"
 }
@@ -21,6 +21,7 @@ has() {
     command -v "$1" >/dev/null 2>&1
 }
 
+# Helper to write a section's output to a file
 write_section() {
     local name="$1"; shift
     local file="$TMPDIR/$name.txt"
