@@ -1,40 +1,41 @@
 # Linux-1
 
-This folder contains introductory assignments and scripts for learning basic Linux shell scripting concepts as part of the DevOps Bootcamp.
+This folder contains beginner-friendly Linux shell scripting assignments and example scripts for the DevOps Bootcamp.
 
-## Folder Structure
+## Structure
 
 - **Assignment-1/**
-  - `check_permissions.sh`: Script to check file permissions.
-  - `problem.md`: Problem statement for Assignment 1.
+	- `check_permissions.sh`: Script to check file permissions.
+	- `problem.md`: Problem statement for Assignment 1.
 - **Project/**
-  - `conditionals.sh`: Script demonstrating conditional statements in bash.
-  - `loops.sh`: Script demonstrating loop constructs in bash.
-  - `variables.sh`: Script demonstrating variable usage in bash.
+	- `conditionals.sh`: Bash script demonstrating conditional statements.
+	- `loops.sh`: Bash script demonstrating loop constructs.
+	- `variables.sh`: Bash script demonstrating variable usage.
 
-## Getting Started
+## How to Use
 
-To run any script, open a terminal and navigate to the respective directory. Make sure the script has execute permissions:
+1. Open a terminal and navigate to the desired directory.
+2. Make the script executable (if needed):
+	 ```sh
+	 chmod +x script_name.sh
+	 ```
+3. Run the script:
+	 ```sh
+	 ./script_name.sh
+	 ```
 
-```sh
-chmod +x script_name.sh
-./script_name.sh
-```
+## Topics Covered
 
-## Purpose
-
-These scripts and assignments are designed to help beginners understand:
 - File permissions
 - Bash variables
-- Conditional statements
-- Looping constructs
+- Conditionals
+- Loops
 
 ## Requirements
-- Linux or macOS system
+
+- Linux or macOS
 - Bash shell
 
 ## Author
-Dipak Prasad
 
----
-Feel free to modify or extend these scripts for your learning needs.
+Dipak Prasad

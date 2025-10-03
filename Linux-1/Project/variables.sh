@@ -81,5 +81,3 @@ elif [ "$num" -eq 0 ]; then
 else
     echo "$num is positive."
 fi
-
-
