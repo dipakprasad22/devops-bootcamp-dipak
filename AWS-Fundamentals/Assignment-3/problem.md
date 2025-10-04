@@ -5,5 +5,5 @@ Create an AWS Architecture diagram contains vpc, igw, public subnet, private sub
 
 #### Here is the architecture diagram:
 
-![VPC Architecture](AWS-VPC.jpeg)
+![VPC Architecture](Image/AWS-VPC.jpeg)
 
