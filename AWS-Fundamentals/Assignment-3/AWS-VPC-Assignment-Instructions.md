@@ -297,6 +297,5 @@ Internet
 4. **Configure Network ACLs** for additional security
 5. **Use Systems Manager Session Manager** instead of SSH
 
----
 
 **🎉 Congratulations!** You've built a production-ready VPC architecture!
