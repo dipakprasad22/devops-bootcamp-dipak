@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    container_name: flask-demo-web
+    ports:
+      - "5000:5000"
+    environment:
+      - SERVICE_MODE=compose
+      - SECRET_KEY=${SECRET_KEY}
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request,sys; r=urllib.request.urlopen('http://127.0.0.1:5000/health', timeout=4); sys.exit(0 if r.getcode()==200 else 1)\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+
+# Optional: run cAdvisor for container-level monitoring (comment out if you don't want it)
+cadvisor:
+  image: gcr.io/cadvisor/cadvisor:latest
+  container_name: cadvisor
+  privileged: true
+  volumes:
+    - /:/rootfs:ro
+    - /var/run:/var/run:ro
+    - /sys:/sys:ro
+    - /var/lib/docker/:/var/lib/docker:ro
+  ports:
+    - "8080:8080"

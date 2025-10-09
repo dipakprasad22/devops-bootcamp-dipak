@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - app-logs:/app/logs
+    networks:
+      - app-network
+  
+  redis:
+    image: redis:alpine
+    networks:
+      - app-network
+
+volumes:
+  app-logs:
+
+networks:
+  app-network:
