@@ -55,6 +55,13 @@ Go to [http://localhost:5000](http://localhost:5000) in your browser.
 ### 4. Monitor
 Run `docker stats` or check cAdvisor at [http://localhost:8080](http://localhost:8080).
 
+### 5. In case of issue, try building the image locally without Docker first
+```bash
+python -m venv venv
+source venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
 ---
 
 This simple project demonstrates production-grade Docker practices in a minimal Flask setup.
