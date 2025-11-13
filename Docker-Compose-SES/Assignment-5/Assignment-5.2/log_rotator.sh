@@ -5,7 +5,7 @@
 
 # Load variables from .env-sample if it exists
 if [ -f .env-sample ]; then
-  export $(grep -v '^#' .env-sample | xargs)
+  export "$(grep -v '^#' .env-sample | xargs)"
 fi
 
 # Use env variables or defaults
