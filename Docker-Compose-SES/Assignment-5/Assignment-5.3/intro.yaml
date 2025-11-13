@@ -1,0 +1,47 @@
+name: Dipak Prasad
+gender: male
+age: 33
+native: Kolkata
+citizen: Indian
+contact:
+  email: dipakprasad68@gmail.com
+  phone: "+91-9876543210"
+  address: Mumbai, Maharashtra, India
+family:
+  wife:
+    name: Sweety
+    status: Housewife
+  child:
+    name: Dev
+    status: Student  
+profession:
+  job: Software Engineer
+  skills:
+  - Kubernetes
+  - Docker
+  - Terraform
+  - AWS
+  - Jenkins
+  - GitHub Actions
+  certifications:
+  - CKA
+  - CKAD
+  current_focus:
+  - Attend Akhileshs DevOps Bootcamp
+  - Prepare for CKS
+  projects:
+  - name: Monitoring App
+    description: Script for Log Monitoring and System Monitoring
+    tools: [Linux, Bash]
+  - name: AWS VPC and Subnets Setup
+    description: Setup VPC, Public Subnet, Private Subnet, IGW and NGW
+    tools: [AWS Console, AWS CLI]
+  - name: Deploy 2 tier app using Docker Compose
+    description: Deployed a logging and alert app using docker-compose
+    tools: [Docker, Docker-Compose]
+hobbies:
+- Cricket
+- Badminton
+- Travelling
+- Reading Tech Blogs
+- Watching Movies

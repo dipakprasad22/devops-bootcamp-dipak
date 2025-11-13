@@ -1,0 +1,1 @@
+Logs folder will contain all the log files.

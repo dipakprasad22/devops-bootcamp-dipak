@@ -1,0 +1,1 @@
+Archive folder will contain all the rotated logs under timestamped folders.
